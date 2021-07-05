@@ -116,7 +116,10 @@
         </LinearLayout>
 
         <TextView
+            android:textAlignment="center"
             android:id="@+id/text_players"
+            android:text="Oyuncu Listesi"
+            android:textSize="25dp"
             android:layout_weight="8"
             android:layout_width="match_parent"
             android:layout_height="1dp"/>
