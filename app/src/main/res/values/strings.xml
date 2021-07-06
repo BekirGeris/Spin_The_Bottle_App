@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Dongel</string>
+    <string name="app_name">Sise Cevir</string>
+    <string name="oyuncu">Oyuncu</string>
+    <string name="sayısı">Sayısı</string>
+    <string name="liste">Oyuncu Listesi</string>
+    <string name="toolsMessage_1">Oyuncu Adı Boş Olamaz</string>
+    <string name="appId">ca-app-pub-9407961126057826~9966665682</string>
+    <string name="bannerId">ca-app-pub-9407961126057826/6776082485</string>
 </resources>
