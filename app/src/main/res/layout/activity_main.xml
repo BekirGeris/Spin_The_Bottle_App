@@ -3,10 +3,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutAna"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context=".AnaSayfa">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="80"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
 
     <RadioGroup
         android:id="@+id/radio_grup"
@@ -18,13 +25,13 @@
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Oyuncu"
+            android:text="@string/oyuncu"
             android:textSize="30dp"/>
         <TextView
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sayısı"
+            android:text="@string/sayısı"
             android:textSize="30dp"/>
         <RadioButton
             android:id="@+id/radio_pirates_3"
@@ -107,7 +114,8 @@
                 android:layout_weight="10"
                 android:layout_width="1dp"
                 android:layout_height="match_parent"/>
-            <Button
+            <ImageButton
+                android:src="@drawable/oyuncu_add"
                 android:id="@+id/buton_add"
                 android:layout_weight="4"
                 android:layout_width="1dp"
@@ -118,11 +126,32 @@
         <TextView
             android:textAlignment="center"
             android:id="@+id/text_players"
-            android:text="Oyuncu Listesi"
+            android:text="@string/liste"
             android:textSize="25dp"
             android:layout_weight="8"
             android:layout_width="match_parent"
             android:layout_height="1dp"/>
     </LinearLayout>
 
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="#a5b1c2">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:adSize="BANNER"
+            app:adUnitId="@string/bannerId"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </RelativeLayout>
 </LinearLayout>
